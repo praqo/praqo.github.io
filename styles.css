@@ -63,3 +63,9 @@ h1 {
     margin: 0;
     font-size: 16px;
 }
+
+.project-tech-icon svg {
+    width: 17px;
+    fill: #fff;
+    margin: 0 5px;
+}
