@@ -10,9 +10,11 @@ body {
     color: rgb(136, 157, 169);
 }
 
-h1 {
+.name {
+    margin: 10px 0 40px 0;
     color: #fff;
     font-size: 100px;
+    line-height: 0.9;
 }
 
 .project {
@@ -68,4 +70,40 @@ h1 {
     width: 17px;
     fill: #fff;
     margin: 0 5px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0) translate(0px, 0px);
+    }
+
+    to {
+        transform: rotatex(-180deg) translate(0px, -18px);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.rotate {
+    animation-duration: 3s;
+    animation-name: rotate;
+    display: inline-block;
+    transform: rotatex(-180deg) translate(0px, -18px);
+}
+
+.fade-in {
+    animation-duration: 3s;
+    animation-name: fade;
+    opacity: 1;
 }
